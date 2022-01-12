@@ -64,7 +64,7 @@ function AddToastModal({
               </button>
             </div>
             <div className="column">
-              <div class="ingredients">Składniki</div>
+              <div className="ingredients">Składniki</div>
               <div className="ingredients-list-container">
                 <div className="ingredients-list">
                   <ul>

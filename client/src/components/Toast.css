@@ -1,0 +1,34 @@
+.toasts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.toast {
+  background-color: var(--secondary);
+  padding: 0.5rem 3rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+  margin-bottom: 2rem;
+}
+
+.toast-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.delete-toast {
+  background-color: var(--red);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.delete-toast:hover {
+  background-color: var(--red-light);
+}

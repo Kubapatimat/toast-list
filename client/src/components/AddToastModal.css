@@ -1,0 +1,139 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 80vh;
+  max-width: 70vw;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: start;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.modal-content {
+  flex: 1;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.modal h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal form {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.modal label {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.modal label:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.modal button:hover {
+  background-color: var(--primary-light);
+}
+
+.column:nth-of-type(2) {
+  display: flex;
+  align-items: stretch;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.ingredients-container {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ingredients-list-container {
+  height: 0;
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.ingredients-list {
+  padding: 1rem;
+  width: 100%;
+  flex-grow: 1;
+  overflow: auto;
+  min-height: 0;
+}
+
+.add-ingredient,
+.ingredients {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 0.5rem;
+}
+
+.modal .button-remove {
+  background-color: var(--red);
+  color: #fff;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.modal .button-remove:hover {
+  background-color: var(--red-light);
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: var(--secondary);
+  border-radius: 10rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in 0.15s;
+}
+
+.close-modal:hover {
+  background-color: #6993f5;
+}

@@ -25,8 +25,6 @@ function App() {
     let sum = 0;
     for (let i = 0; i < toasts.length; i += toasterCapacity) {
       sum += Math.max(...toasts.map((toast) => toast.toastTime).slice(i, i + toasterCapacity));
-      console.log(...toasts.map((toast) => toast.toastTime).slice(i, i + toasterCapacity));
-      console.log(i);
     }
     setTotalTime(sum);
   }, [toasts, toasterCapacity]);
